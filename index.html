@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title class="title">Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <div class="theme">
+            <div class="theme-logo">
+                <div class="light logo" onclick="light()">
+                    <span>☀</span>
+                </div>
+                <div class="dark logo" onclick="dark()">
+                    <span>🌥</span>
+                </div>
+            </div>
+        </div>
+        <h1 class="name">Your Name & LastName</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <!-- Image -->
+            <div class="image-container">
+                <div class="image">
+                    <img src="img/wonderlane-6zlgM-GUd6I-unsplash.jpg" alt="Image" id="profile-pic">
+                </div>
+                <input type="file" accept="images/*" id="imageupload" required>
+            </div>
+
+            <h2>About Me</h2>
+            <p class="information">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, facilis deleniti. Velit repellat veniam fugiat similique dolorem, mollitia reiciendis quas aut. Nam rem nobis in illum consequuntur at culpa voluptatem!
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article class="project-article">    
+                <h3 class="project-title">Project-Title</h3>
+                <p class="project-details">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, facilis deleniti. Velit repellat veniam fugiat similique dolorem, mollitia reiciendis quas aut. Nam rem nobis in illum consequuntur at culpa voluptatem!
+                </p>
+                <a href="http://github.com" class="project-link">View on Github</a>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>&copy;2025 <p class="footer-name"> Munir-Rahman</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
